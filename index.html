@@ -1,0 +1,179 @@
+<!DOCTYPE html>													
+<html>													
+    <head>													
+        <title>D Sabita Patra - Portfolio</title>													
+        <link rel="stylesheet" href="./style.css"/>													
+        <script src="./script.js"></script>													
+    </head>													
+    <body>													
+        <!-- Navigation Bar -->													
+        <nav>													
+            <div id="home">													
+                <div class="profile_name">													
+                 D Sabita Patra													
+                <div class="contact_info">													
+                     <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>													
+                        jdoe@jeemail.com													
+                </div>													
+                <div style="clear:both;"></div>													
+                    <div class="contact_info">													
+                        <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>													
+                        +13456764598													
+													
+                    </div>													
+                </div>													
+                <div class="topdiv">													
+                    <a class="topmenu" href="#about-me">About Me</a>													
+                    <a class="topmenu" href="#skills">Skills</a>													
+                    <a class="topmenu" href="#projects">Projects</a>													
+                    <a class="topmenu" href="#recommendation">Recommendation</a>													
+													
+                </div>													
+             </div> 												
+        </nav>													
+													
+        <!-- About Me -->													
+        <section id="about-me" class="container">													
+            <div>													
+                 <img src="html_finalprojimages/proficpic.png" class="profile_image"/>													
+            </div>													
+													
+        <div>													
+            <h1>													
+                Hi, I'm D Sabita Patra! <img src="html_finalprojimages/waving-hand.png" width="60px"/>													
+            </h1>													
+            <p>													
+                 I am a full stack developer with 5 years of experience in both application and presentation layers.<br>													
+                 I have worked on applications and microservices deployed on IBM Cloud.<br> 													
+                 I am an avid user of IBM Watson Services and have worked on Watson Assistant, NLU, Sentiment analyzer to name a few.<br>													
+             </p>													
+         </div>													
+     </section>													
+ <!-- Skills -->													
+     <section id="skills">													
+        <h2>Skills</h2>													
+             <div style="clear:both;"></div>													
+													
+             <div class="all_skills">													
+                <div class="skill">													
+                     <img src="html_finalprojimages/html5.png"/>													
+                    <h6>HTML</h6>													
+                    <p>4 years experience</p>													
+                </div> 													
+													
+                <div class="skill">													
+                     <img src="html_finalprojimages/js.jpeg"/>													
+                         <h6>JavaScript</h6>													
+                         <p>3 years experience</p>													
+                 </div> 													
+            <div class="skill">													
+                 <img src="html_finalprojimages/java.png"/>													
+                 <h6>JAVA</h6>													
+                 <p>4 years experience</p>													
+             </div> 													
+    													
+            <div class="skill">													
+                 <img src="html_finalprojimages/CSS3.png"/>													
+                 <h6>CSS</h6>													
+                 <p>4 years experience</p>													
+            </div> 												
+             <div class="skill">													
+                 <img src="html_finalprojimages/react.png"/>													
+                <h6>REACT</h6>													
+                <p>1 years experience</p>													
+             </div> 													
+													
+         </div>													
+     </section>													
+     
+     <!-- Projects -->													
+     <section class="projects" id="projects">													
+        <h2>													
+             Projects													
+        </h2>													
+         <div style="clear:both;"></div>													
+													
+            <div id="projects-container" class="projects-container">													
+                 <div class="project-card">													
+                     <h3>Employee Attendance System</h3>													
+                     <ul>													
+                     <li>It manage and track employee check-in/check-out and daily attendance records.													
+                            It helped automate attendance tracking, reduce manual effort, and improve accuracy in maintaining employee records.</li>													
+                     </ul>													
+                 </div>													
+                <hr>													
+                 <div class="project-card">													
+                     <h3>Credit Card Mangement System</h3>													
+                     <ul>													
+                        <li>to manage customer credit card details, transactions, payments, and account information.													
+                         It helped streamline card management, reduce manual work, and improve the accuracy and efficiency of financial record handling.</li>													
+                    </ul>													
+                </div>													
+             </div>													
+        </section>													
+         <div style="clear:both;">
+        </div>													
+													
+           <!-- Recommendations -->													
+            <section id="recommendations">													
+                <h2>Recommendations</h2>													
+                <div style="clear:both;"></div>													
+                    <div class="all_recommendations" id="all_recommendations">													
+                        <div class="recommendation">													
+                             <span>&#8220;</span>													
+                            Sabita is a dedicated and reliable software developer with strong problem-solving skills.													
+                             She consistently delivers quality work and quickly adapts to new technologies.													
+                             She has a curious mind and asks the right question. 													
+                             She takes initiative within a team and has potentials to lead the team.													
+                            <span>&#8221;</span>													
+                         </div>													
+                         <div class="recommendation">													
+                            <span>&#8220;</span>													
+                             Sabita has a strong learning mindset and is always willing to explore new technologies. 													
+                            Her transition into Python and AI reflects her enthusiasm for continuous growth.													
+                           For any future projects that need her expertise I would definitely want to work with her again.													
+                            <span>&#8221;</span>													
+                        </div>													
+                    <div class="recommendation">													
+                        <span>&#8220;</span>													
+                         I had worked along with sabita during the initial phase of our venture which needed Web development. 													
+                         She is a committed resource who has in depth knowledge about the domain. 													
+                         She will be an asset for any organisation! 													
+                         <span>&#8221;</span>													
+                     </div>													
+                </div>													
+            </section>													
+													
+        <!-- Recommendation Form -->													
+         <section id="contact">													
+            <div class="flex_center">													
+                <fieldset>													
+                    <legend class="introduction">Leave a Recommendation</legend>          													
+                    <input type="text" placeholder="Name (Optional)"> <br/>													
+                    <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>													
+                    <div class="flex_center">													
+                         <button id="recommend_btn" onclick="addRecommendation(showPopup(true));">Submit</button>													
+                     </div>													
+                </fieldset>													
+            </div>													
+        </section>													
+													
+         <div class="iconbutton">													
+            <a href="#home">													
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">													
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />													
+                </svg>													
+													
+            </a>													
+         </div>													
+													
+         <div class="popup" id="popup" class="flex_center">													
+            <img src="html_finalprojimages/checkmark--outline.svg"/>													
+            <h3>This is for leaving a Recommendation</h3>													
+            <button onclick="showPopup(true)">Ok</button>													
+         </div>													
+    </body>													
+</html>													
+													
+													
+													
